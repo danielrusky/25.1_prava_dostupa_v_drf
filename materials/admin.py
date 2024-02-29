@@ -3,7 +3,6 @@ from django.contrib import admin
 from materials.models import Course, Lesson
 
 
-
 @admin.register(Course)
 class AdminCourse(admin.ModelAdmin):
     list_display = ('title', 'image', 'description', 'owner',)
